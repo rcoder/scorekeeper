@@ -1,0 +1,40 @@
+{
+  "name": "scorekeeper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "color": "^3.0.0",
+    "md5": "^2.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.0",
+    "@types/md5": "^2.1.32",
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
+    "awesome-typescript-loader": "^3.4.1",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.1",
+    "typescript": "^2.7.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": ""
+}

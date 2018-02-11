@@ -1,0 +1,26 @@
+.sk-counter {
+    padding: 1em;
+    margin: 0.5em;
+    display: flex;
+
+    .sk-counter-name {
+        margin: 0.75em;
+        width: 200px;
+    }
+
+    .sk-counter-score {
+        margin: 0.75em;
+    }
+    
+    button {
+        border: none;
+        padding: 0px;
+        margin-right: 1em;
+        width: 3em;
+        height: 3em;
+    }
+
+    .sk-player-remove {
+        margin-left: auto;
+    }
+}

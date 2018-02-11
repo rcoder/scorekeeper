@@ -1,0 +1,13 @@
+@import 'components/Counter';
+@import 'components/NewPlayer';
+@import 'components/Scorekeeper';
+
+body {
+    background: #000;
+    font-family: monospace;
+    color: #fff;
+
+    form * {
+        font-family: monospace;
+    }
+}
