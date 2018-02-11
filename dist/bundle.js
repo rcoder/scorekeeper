@@ -1138,35 +1138,27 @@ convert.rgb.gray = function (rgb) {
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(5);
-(function webpackMissingModule() { throw new Error("Cannot find module \"bundle\""); }());
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(6);
-var Models = __webpack_require__(7);
-var Scorekeeper_1 = __webpack_require__(8);
-__webpack_require__(20);
+var ReactDOM = __webpack_require__(5);
+var Models = __webpack_require__(6);
+var Scorekeeper_1 = __webpack_require__(7);
+__webpack_require__(19);
 var game = new Models.Game();
 window.game = game;
 ReactDOM.render(React.createElement(Scorekeeper_1.default, { game: game }), document.getElementById("sk-scores-container"));
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
 module.exports = ReactDOM;
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1223,7 +1215,7 @@ exports.Game = Game;
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1240,10 +1232,10 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var MD5 = __webpack_require__(9);
-var Color = __webpack_require__(12);
-var Counter_1 = __webpack_require__(18);
-var NewPlayer_1 = __webpack_require__(19);
+var MD5 = __webpack_require__(8);
+var Color = __webpack_require__(11);
+var Counter_1 = __webpack_require__(17);
+var NewPlayer_1 = __webpack_require__(18);
 var Scorekeeper = /** @class */ (function (_super) {
     __extends(Scorekeeper, _super);
     function Scorekeeper(props) {
@@ -1279,7 +1271,7 @@ var Scorekeeper = /** @class */ (function (_super) {
         var currentScores = this.state.game.currentScores();
         return React.createElement("div", { className: "sk-game" },
             React.createElement(NewPlayer_1.default, { handler: this.addPlayer }),
-            React.createElement("h1", null, "\u00B5Scorekeeper"),
+            React.createElement("strong", null, "\u00B5Scorekeeper"),
             currentScores.map(function (score) {
                 return React.createElement(Counter_1.default, { bgcolor: _this.generateColor(score.player.name), key: score.key, player: score.player.name, score: score.value, scoreHandler: _this.changeScore, removeHandler: _this.removePlayer });
             }));
@@ -1290,13 +1282,13 @@ exports.default = Scorekeeper;
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function(){
-  var crypt = __webpack_require__(10),
+  var crypt = __webpack_require__(9),
       utf8 = __webpack_require__(1).utf8,
-      isBuffer = __webpack_require__(11),
+      isBuffer = __webpack_require__(10),
       bin = __webpack_require__(1).bin,
 
   // The core
@@ -1456,7 +1448,7 @@ exports.default = Scorekeeper;
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports) {
 
 (function() {
@@ -1558,7 +1550,7 @@ exports.default = Scorekeeper;
 
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports) {
 
 /*!
@@ -1585,14 +1577,14 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var colorString = __webpack_require__(13);
-var convert = __webpack_require__(16);
+var colorString = __webpack_require__(12);
+var convert = __webpack_require__(15);
 
 var _slice = [].slice;
 
@@ -2071,12 +2063,12 @@ module.exports = Color;
 
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
 var colorNames = __webpack_require__(2);
-var swizzle = __webpack_require__(14);
+var swizzle = __webpack_require__(13);
 
 var reverseNames = {};
 
@@ -2310,13 +2302,13 @@ function hexDouble(num) {
 
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var isArrayish = __webpack_require__(15);
+var isArrayish = __webpack_require__(14);
 
 var concat = Array.prototype.concat;
 var slice = Array.prototype.slice;
@@ -2346,7 +2338,7 @@ swizzle.wrap = function (fn) {
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2364,11 +2356,11 @@ module.exports = function isArrayish(obj) {
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var conversions = __webpack_require__(3);
-var route = __webpack_require__(17);
+var route = __webpack_require__(16);
 
 var convert = {};
 
@@ -2448,7 +2440,7 @@ module.exports = convert;
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var conversions = __webpack_require__(3);
@@ -2551,7 +2543,7 @@ module.exports = function (fromModel) {
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2606,7 +2598,7 @@ exports.default = Counter;
 
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2655,11 +2647,11 @@ exports.default = NewPlayer;
 
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(21);
+var content = __webpack_require__(20);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -2673,7 +2665,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(23)(content, options);
+var update = __webpack_require__(22)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -2705,10 +2697,10 @@ if(false) {
 }
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(22)(false);
+exports = module.exports = __webpack_require__(21)(false);
 // imports
 
 
@@ -2719,7 +2711,7 @@ exports.push([module.i, ".sk-counter {\n  padding: 1em;\n  margin: 0.5em;\n  dis
 
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports) {
 
 /*
@@ -2801,7 +2793,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -2867,7 +2859,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(24);
+var	fixUrls = __webpack_require__(23);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -3183,7 +3175,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports) {
 
 

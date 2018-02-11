@@ -52,7 +52,7 @@ export default class Scorekeeper extends React.Component<ScorekeeperProps, Score
 
         return <div className="sk-game">
             <NewPlayer handler={this.addPlayer} />
-            <h1>&micro;Scorekeeper</h1>
+            <strong>&micro;Scorekeeper</strong>
             {currentScores.map(score => 
                 <Counter
                     bgcolor={this.generateColor(score.player.name)}
