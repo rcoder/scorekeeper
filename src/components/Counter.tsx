@@ -28,7 +28,7 @@ export default class Counter extends React.Component<CounterProps, CounterState>
     }
 
     private handleRemove() {
-        if (confirm("Remove player " + this.props.player + "?")) {
+        if (confirm("Remove player " + this.props.player + "@")) {
             this.props.removeHandler(this.props.player);
         }
     }
