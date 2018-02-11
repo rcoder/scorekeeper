@@ -2705,7 +2705,7 @@ exports = module.exports = __webpack_require__(21)(false);
 
 
 // module
-exports.push([module.i, ".sk-counter {\n  padding: 1em;\n  margin: 0.5em;\n  display: flex; }\n  .sk-counter .sk-counter-name {\n    margin: 0.75em;\n    width: 200px; }\n  .sk-counter .sk-counter-score {\n    margin: 0.75em;\n    width: 80px;\n    text-align: right; }\n  .sk-counter button {\n    border: none;\n    padding: 0px;\n    margin-right: 1em;\n    width: 3em;\n    height: 3em; }\n  .sk-counter .sk-player-remove {\n    margin-left: auto; }\n\n.sk-newplayer-form {\n  float: right;\n  margin-left: 2em; }\n  .sk-newplayer-form button {\n    margin-left: 1em; }\n\n.sk-game {\n  width: auto; }\n\nbody {\n  background: #000;\n  font-family: monospace;\n  color: #fff; }\n  body form * {\n    font-family: monospace; }\n", ""]);
+exports.push([module.i, ".sk-counter {\n  padding: 1em;\n  margin: 1em;\n  display: flex; }\n  .sk-counter .sk-counter-name {\n    margin: 0.75em;\n    width: 200px; }\n  .sk-counter .sk-counter-score {\n    margin: 0.75em;\n    width: 80px;\n    text-align: right; }\n  .sk-counter button {\n    border: none;\n    padding: 0px;\n    margin-right: 1em;\n    width: 3em;\n    height: 3em; }\n  .sk-counter .sk-player-remove {\n    margin-left: auto; }\n\n.sk-newplayer-form {\n  float: right;\n  margin-left: 2em; }\n  .sk-newplayer-form button {\n    margin-left: 1em; }\n\n.sk-game {\n  width: auto; }\n\nbody {\n  background: #000;\n  font-family: monospace;\n  color: #fff; }\n  body form * {\n    font-family: monospace; }\n", ""]);
 
 // exports
 
